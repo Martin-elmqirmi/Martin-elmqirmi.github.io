@@ -1,1 +1,128 @@
-Hello World !
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin El Mqirmi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<div id="app" class="container mt-5 book-container">
+    <div class="row">
+        <div class="col-md-8 col-lg-9">
+            <div class="parent-container">
+                <h1>Martin El Mqirmi</h1>
+                <p>Computer Science MSc Student at
+                    <a href="https://www.umontreal.ca/en/" target="_blank" title="UdeM">
+                        University of Montreal</a>
+
+                <hr class="gradient-hr">
+                <div class="link-container">
+                    <a href="https://www.linkedin.com/in/martin-el-mqirmi-3417761a7/" target="_blank" class="link-linkedin">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+
+                    <a href="mailto:martin.elmqirmi@gmail.com" class="link-email">
+                        <i class="fa-regular fa-envelope"></i> Email
+                    </a>
+
+                    <a href="https://scholar.google.com/citations?user=z_KPdsIAAAAJ&hl=fr&oi=ao"
+                       target="_blank" class="link-gs">
+                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
+                    </a>
+
+                    <a href="https://github.com/Martin-elmqirmi" target="_blank" class="link-github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <hr class="gradient-hr">
+            </div>
+
+            <div class="mt-4 mb-5">
+                <p>
+                    I am currently pursuing a Master’s degree in Computer Science at the
+                    <a href="https://www.umontreal.ca/en/" target="_blank" title="https://www.umontreal.ca/en/">
+                        University of Montreal</a>,
+                    where I am advised by
+                    <a href="https://noamaig.github.io/" target="_blank" title="https://noamaig.github.io/">
+                    Prof. Noam Aigerman</a>.
+                    I am interested in both geometry processing and
+                    deep learning, and my work explores how these two areas can be combined to better understand
+                    and manipulate 3D models. I completed my Bachelor’s degree at the University of Montreal,
+                    and my academic interests span both computer graphics and computer vision, with an emphasis
+                    on modern, data-driven approaches to 3D representation and editing.
+                    </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="rounded-image-container">
+                <img src="img/photo.jpg" alt="Rounded Image" class="rounded-image">
+            </div>
+        </div>
+
+        <div id="Publications">
+            <h2 class="gradient-background">Publications</h2>
+
+            <div class="publication-entry row mt-3 mb-3 ml-4">
+                <div class="col-md-3 image-container">
+                    <img src="img/rodin.png" alt="Teaser" class="centered-image p-2">
+                </div>
+                <div class="col-md-9 publication-details">
+                    <b>View-Dependent Deformation Fields for 2D Editing of 3D Models</b><br>
+                    <span class="author-highlight">Martin El Mqirmi</span>, Noam Aigerman<br>
+                    <em>Expressive 2025</em><br>
+                    <a href="https://arxiv.org/pdf/2504.05544" target="_blank">[Paper]</a> |
+                    <a href="https://martin-elmqirmi.github.io/view_dependent_deformation_fields_project_page/"
+                       target="_blank">
+                        [Project Page]
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Projects">
+            <h2 class="gradient-background">Projects</h2>
+
+            <div class="row mt-3 mb-3 ml-4">
+                <div class="col-md-3 image-container">
+                    <img src="img/sbl.jpeg" alt="SBL Site" class="centered-image p-2">
+                </div>
+                <div class="col-md-7">
+                    <i class="fas fa-map-marker-alt"></i> <span>Montreal, Canada</span> <br>
+                    <b>Supervisor : </b>
+                    <a href="https://www.iro.umontreal.ca/~sahraouh/" target="_blank">
+                        Houari Sahraoui
+                    </a> <br>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> Mai 2022 - August 2022 <br>
+                    Development of a booking system for the
+                    <a href="https://sbl.iro.umontreal.ca/" target="_blank">Laurentians Biology Station</a>
+                    in the context of a course project during my bachelor
+                </div>
+            </div>
+        </div>
+
+        <div id="work-experience">
+            <h2 class="gradient-background">Work Experience</h2>
+
+            <div class="row mt-3 mb-3 ml-4">
+                <div class="col-md-3 image-container">
+                    <img src="img/openstudio.png" alt="OpenStudio Logo" class="centered-image p-4">
+                </div>
+                <div class="col-md-7">
+                    <i class="fas fa-map-marker-alt"></i> <span>Le Puy-en-Velay, France</span> <br>
+                    <b>Backend developer</b>, <a href="https://www.openstudio.fr/">OpenStudio</a> <br>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> January 2023 - July 2023 <br>
+                    I worked as a backend developer for 7 month. I was responsible to code new features and
+                    to maintain the code of an API called NextGen
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

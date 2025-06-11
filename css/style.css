@@ -1,0 +1,191 @@
+a {
+    color: #3366cc; /* less intense blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff6600; /* orange on hover */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #6a60a9; /* subtle purple for visited links */
+}
+
+.book-container {
+    padding: 40px;
+    margin: 50px auto;
+    background: #ffffff; /* Light paper-like background color */
+    border: 1px solid #ccc; /* Light border to give a subtle book feel */
+    box-shadow: 7px 0 10px rgba(200, 200, 200, 0.7);
+    border-radius: 40px; /* Rounded corners */
+    line-height: 1.6; /* Good line spacing for readability */
+    text-align: justify; /* Justify text like in a book */
+}
+
+.book-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), transparent); /* Subtle gradient at the top for a shadow effect */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.book-container h1, .book-container h2, .book-container h3 {
+    font-family: 'Palatino', serif; /* Elegant headings font */
+    margin-bottom: 20px;
+    color: #333; /* Darker color for headings */
+}
+
+.book-container p {
+    margin-bottom: 20px;
+}
+
+.rounded-image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.rounded-image {
+    width: 200px; /* Set the size of the square */
+    height: 200px; /* Ensure the image remains square */
+    border-radius: 30%; /* Make the image fully rounded */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border: 2px solid #ccc; /* Optional: Add a border around the image */
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+}
+
+.link-container {
+    display: flex;
+    gap: 20px; /* Space between links */
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.link-container a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Font size */
+    position: relative;
+    padding: 0 10px; /* Space around each link */
+}
+
+.link-container a::before {
+    content: '\2022'; /* Unicode character for a dot */
+    font-size: 24px; /* Dot size */
+    color: #333; /* Dot color */
+    position: absolute;
+    left: -15px; /* Adjust based on the dot size and spacing */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-container a:first-child::before {
+    content: ''; /* No dot before the first link */
+}
+
+.link-container a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Icon size */
+}
+
+.fa-linkedin { color: #0077b5; } /* LinkedIn color */
+.fa-file-pdf { color: #E53E3E; } /* PDF color */
+.fa-envelope { color: #EA4335; } /* Email color */
+.fa-github { color: #333; } /* GitHub color */
+
+.link-linkedin:hover { color: #0077b5; }
+.link-cv:hover { color: #E53E3E; }
+.link-email:hover { color: #EA4335; }
+.link-github:hover { color: #333; }
+
+.gradient-background {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: white; /* Text color */
+    padding: 10px 20px; /* Space around text */
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+    width: 100%;
+}
+
+.gradient-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #eeeeee, #ffffff); /* Gradient background */
+    z-index: -1;
+    border-radius: 10px; /* Rounded corners for the band */
+}
+
+.gradient-background {
+    position: relative;
+    z-index: 1; /* Ensures text is on top of the gradient band */
+}
+
+.gradient-hr {
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, #ffffff, #cccccc, #ffffff);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image (optional) */
+    height: auto;
+}
+
+.centered-image {
+    width: 100%; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text details */
+.publication-details {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Links */
+.publication-details a {
+    color: #3366cc; /* less saturated blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.publication-details a:hover {
+    color: #ff6600; /* hover color */
+    text-decoration: underline;
+}
+
+.author-highlight {
+    font-style: italic;
+    color: #070738; /* slightly darker tone than surrounding text */
+}
+
+
